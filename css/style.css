@@ -298,6 +298,35 @@ button {
   justify-content: space-between;
   padding-inline-start: 0px;
 }
+
+.thumb-service-list-item{
+  position: relative;
+  display: flex;
+}
+.service-list-item-image{
+   display: block;
+}
+.thumb-service-list-description{
+height: 70px;
+width: 370px;
+background: rgba(47, 48, 58, 0.8);
+position: absolute;
+bottom: 0px;
+}
+.service-list-item-image-description{
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+    color: #FFFFFF;
+    position: absolute;
+    left: 90px;
+    top: 27px;
+}
+
 /* ====== END SERVICE SECTION ====== */
 
 /* ====== TEAM SECTION ====== */
