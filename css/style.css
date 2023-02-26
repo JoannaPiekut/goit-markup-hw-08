@@ -336,6 +336,7 @@ button {
 .our-team-list-item-figcaption {
   text-align: center;
   padding: 20px;
+  height: 107px;
 }
 .our-team-social-link{
   padding-inline-start: 0px;
