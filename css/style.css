@@ -701,7 +701,9 @@ padding:20px;
   border: 1px solid #EEEEEE;
   height:100%;
   display: block;
-  margin-inline-end: 30px
+  margin-inline-end: 30px;
+  margin: 0px
+  
 }
 .categories-list-item-link{
   display: block ;
