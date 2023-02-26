@@ -98,6 +98,7 @@ button {
   align-items: center;
   height: 80px;
   border-bottom: 1px solid #ececec;
+
 }
 
 .row{
@@ -117,6 +118,7 @@ button {
   line-height: 1.143;
   letter-spacing: 0.02em;
   padding-left: 10px;
+  position:relative ;
 }
 .header-list-item-link {
   color: var(--second-font-color);
@@ -129,6 +131,20 @@ button {
 .header-list-item-link:hover,
 .header-list-item-link:focus {
   color: var(--active-color);
+}
+
+.header-list{
+  position: relative;
+}
+.after::after{
+content: "";
+display: block;
+width: 85%;
+background-color:var(--active-color);
+height: 4px;
+position: absolute;
+border-radius: 4px;
+margin-top: 28px;
 }
 
 .header-navigation{
@@ -477,7 +493,7 @@ padding-bottom: 40px;
 }
 .footer-section {
   background-color: var(--second-background);
-  height: 252px;
+  height: 100%;
   display: flex;
   justify-content: flex-start;
 }
