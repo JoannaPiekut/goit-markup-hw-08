@@ -640,6 +640,7 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
 /* ====== CATEGORIES SECTION ====== */
 .categories-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   padding-inline-start: 0px;
   gap: 30px;
