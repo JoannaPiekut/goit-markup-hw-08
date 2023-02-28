@@ -22,7 +22,7 @@
   </head>
   <body>
 
-<div class="backdrop">
+
 <header class="header">
   <div class="container">
     <div class="row">
@@ -70,7 +70,7 @@
           EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
         </h1>
         <div class="first-page-button">
-        <button class="main-section-btn link" type="button">Zamów usługę</button></div>
+        <button class="main-section-btn link" type="button" data-modal-open>Zamów usługę</button></div>
     </div>
   </div>
     <div class="container">
@@ -119,7 +119,7 @@
         </ul>
       </div>
     </div>
-  </div>
+ 
 
   <section class="service section">
     <div class="container">
@@ -407,10 +407,10 @@
       </section>
     </div>
   </footer>
-  <button data-modal-open>OPEN</button>
-    <div class="modal is-hidden" data-modal>
-      <button data-modal-close>X</button>
-    </div>  
+  <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+      <button type="button" class="close-btn" data-modal-close>X</button>
+  </div>
   <script src="./js/modal.js"></script>
   </body>
 </html>
