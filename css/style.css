@@ -57,7 +57,7 @@ button {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 0px;
 }
 
 /* ====== SAME COMPONENTS ====== */
@@ -69,7 +69,7 @@ button {
   font-family: "Raleway", sans-serif;
   font-weight: 700px;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.192;
   color: #000000;
   letter-spacing: 0.03em;
 }
@@ -149,30 +149,38 @@ margin-top: 28px;
 }
 
 .section-right{
-   margin-left:auto
+   margin-left:auto;
+   display: flex;
+   gap: 50px;
 }
 .contact-list-item {
   display: inline-block;
   text-decoration: none;
-  font-style: 500;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
   color: var(--main-font-color);
-  letter-spacing: 1.5px;
-  justify-content: space-between;
-  padding-left: 10px;
- 
+  letter-spacing: .03em;
+  justify-content: space-between; 
   
 }
-.contact-list-item-mail {
+.contact-list-item-link {
   color: var(--main-font-color);
   text-decoration: none;
+  display:flex;
+  gap:10px;
+  align-items: center;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-list-item-mail:hover,
 .contact-list-item-mail:focus {
+  color: var(--active-color);
+}
+
+.contact-list-item-link:hover,
+.contact-list-item-link:focus{
   color: var(--active-color);
 }
 .contact-list-item-phone {
@@ -185,7 +193,7 @@ margin-top: 28px;
 }
 
 .header-icon{
-  fill: var(--main-font-color);
+  fill: currentColor;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
