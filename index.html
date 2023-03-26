@@ -409,40 +409,63 @@
   <div class="backdrop is-hidden" data-modal>
       <div class="modal">
       <button type="button" class="close-btn" data-modal-close><svg class="icon-close" width="18px" height="18px"> <use class="icon-close-svg" href="./images/icons.svg#icon-close-black" x="50%" y="50%"></use> </svg></button>
-      <form name="signup_form" autocomplete="on" novalidate>
+<form name="signup_form" autocomplete="on" novalidate>
        
         <p class="modal-header">Zostaw swoje dane w formularzu poniżej</p>
-        <div class="labels">
-        <label class="label-convertion">
-          Imie
-          <input class="input-style" type="text" name="username"/>
+
+  <div class="label">
+
        
-        </label>
+          <label class="input-container">
+            <span class="label-text">Imię</span>
+                <input class="input-element" type="text" name="username"/>
+                <svg class="input-icon" width="18px" height="18px">
+                  <use class="input-icon-svg" href="./images/icons.svg#icon-person-black"></use>
+                </svg>
+          </label>
+    
 
-        <label class="label-convertion">
-          Telefon
-          <input class="input-style" type="tel" name="phone_number" />
-        </label>
 
-        <label class="label-convertion">
-          Email
-          <input class="input-style" type="email" name="email" />
-        </label>
+          <label class="input-container">
+            <span class="label-text">Email</span>
+                <input class="input-element" type="tel" name="phone_number"/>
+                <svg class="input-icon" width="18px" height="18px">
+                  <use class="input-icon-svg" href="./images/icons.svg#icon-phone-black"></use>
+                </svg>
+          </label>
 
-        <label class="label-convertion">
-          Komentarz
+          <label class="input-container">
+            <span class="label-text">Telefon</span>
+            <input class="input-element" type="email" name="email"/>
+                <svg class="input-icon" width="18px" height="18px">
+                  <use class="input-icon-svg" href="./images/icons.svg#icon-email-black"></use>
+                </svg>
+          </label>
+
+        <label class="input-container">
+          <span class="label-text">Komentarz</span>
           <textarea class="textarea-style" name="feedback" rows="5" placeholder="Wprowadź tekst"></textarea>
         </label>
-      </div>
-      <div class="form-field">
-        <input type="checkbox" class="form-input" name="privacy-policy" value="privacy-policy" id="privacy-policy">
-        <label class="form-label" for="privacy-policy">Oświadczam iż akceptuję <a class="privacy-policy" href="/">Regulamin</a> i <a class="privacy-policy" href="/">Politykę Prywatności.</a></label>
-      </div>
-        <button class="submit-modal-button" type="submit">Wyślij</button>
-      
-      </form>
+  </div>
+  <div class="inner">
 
-        </div>
-  <script src="./js/modal.js"></script>
+    <input type="checkbox" name="cb" id="cb">
+    <label class="checkbox-label" for="cb" id="checkbox">
+        <svg class="checkbox-svg" viewBox="0 0 100 100" width="16px" height="15px">
+          <path class="check-box" d="M82,89H18c-3.87,0-7-3.13-7-7V18c0-3.87,3.13-7,7-7h64c3.87,0,7,3.13,7,7v64C89,85.87,85.87,89,82,89z"/>
+            <polyline class="check hidden-check" points="25.5,53.5 39.5,67.5 72.5,34.5 "/>
+        </svg>
+        <p class="form-description" for="privacy-policy">Oświadczam iż akceptuję <a class="privacy-policy"  href="/">Regulamin</a> i <a class="privacy-policy" href="/">Politykę Prywatności.</a>
+        </p>
+    </label>
+</div>
+
+    
+      <button class="submit-modal-button" type="submit">Wyślij</button>
+
+
+</form>
+
+   <script src="./js/modal.js"></script>
   </body>
 </html>
