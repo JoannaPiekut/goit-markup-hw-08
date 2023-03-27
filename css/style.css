@@ -379,7 +379,7 @@ justify-content: center;
 }
 .our-team__item {
   background-color: var(--third-background);
-  categories__card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
   margin: 0 auto;
@@ -387,7 +387,7 @@ justify-content: center;
 
 .our-team__item:hover,
 .our-team__item:focus{
-  categories__card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25), 0px 1px 1px rgba(0, 0, 0, 0.25), 0px 2px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25), 0px 1px 1px rgba(0, 0, 0, 0.25), 0px 2px 1px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 4px 4px;  
 }
 
@@ -642,6 +642,7 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
       margin-bottom: 20px;
       letter-spacing: 0.03em;
       color:#ffffff;
+      font-weight: 700;
       text-transform: uppercase;
       }
 
@@ -663,7 +664,8 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
         border-radius: 4px;
         transition-property: border-color;
         transition-duration: 250ms;
-        transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+        transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+        padding-left: 16px;
       }
 
       .footer-form__input:hover{
