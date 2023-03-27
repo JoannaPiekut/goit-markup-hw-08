@@ -25,7 +25,7 @@
 <main>
     <header class="header">
       <div class="container container--row">     
-          <a class="company-name link" href="index.html"><span class=".company-name--web-color">Web</span>Studio</a>
+          <a class="company-name link" href="index.html"><span class="company-name--web-color">Web</span>Studio</a>
 
             <nav class="header__navigation">
               <ul class="header-list">
@@ -400,58 +400,59 @@
   
   </div>
 </footer>
+
+
   <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-      <button type="button" class="close-btn" data-modal-close><svg class="icon-close" width="18px" height="18px"> <use class="icon-close-svg" href="./images/icons.svg#icon-close-black" x="50%" y="50%"></use> </svg></button>
-<form name="signup_form" autocomplete="on" novalidate>
-       
-        <p class="modal-header">Zostaw swoje dane w formularzu poniżej</p>
+      <button type="button" class="close-btn" data-modal-close><svg class="modal--svg-close" width="18px" height="18px"> <use class="modal--icon-close" href="./images/icons.svg#icon-close-black" x="50%" y="50%"></use> </svg></button>
 
-  <div class="label">
 
-       
-          <label class="input-container">
-            <span class="label-text">Imię</span>
-                <input class="input-element" type="text" name="username"/>
-                <svg class="input-icon" width="18px" height="18px">
-                  <use class="input-icon-svg" href="./images/icons.svg#icon-person-black"></use>
+  <form name="signup-form" autocomplete="on" novalidate>   
+        <p class="signup-form__header">Zostaw swoje dane w formularzu poniżej</p>
+
+  <div class="signup-form__group">     
+          <label class="signup-form__container">
+            <span class="signup-form__description">Imię</span>
+                <input class="signup-form__input" type="text" name="username"/>
+                <svg class="signup-form__svg" width="18px" height="18px">
+                  <use class="signup-form__icon" href="./images/icons.svg#icon-person-black"></use>
                 </svg>
           </label>
     
 
 
-          <label class="input-container">
-            <span class="label-text">Email</span>
-                <input class="input-element" type="tel" name="phone_number"/>
-                <svg class="input-icon" width="18px" height="18px">
-                  <use class="input-icon-svg" href="./images/icons.svg#icon-phone-black"></use>
+          <label class="signup-form__container">
+            <span class="signup-form__description">Email</span>
+                <input class="signup-form__input" type="tel" name="phone_number"/>
+                <svg class="signup-form__svg" width="18px" height="18px">
+                  <use class="signup-form__icon" href="./images/icons.svg#icon-phone-black"></use>
                 </svg>
           </label>
 
-          <label class="input-container">
-            <span class="label-text">Telefon</span>
-            <input class="input-element" type="email" name="email"/>
-                <svg class="input-icon" width="18px" height="18px">
-                  <use class="input-icon-svg" href="./images/icons.svg#icon-email-black"></use>
+          <label class="signup-form__container">
+            <span class="signup-form__description">Telefon</span>
+            <input class="signup-form__input" type="email" name="email"/>
+                <svg class="signup-form__svg" width="18px" height="18px">
+                  <use class="signup-form__icon" href="./images/icons.svg#icon-email-black"></use>
                 </svg>
           </label>
 
-        <label class="input-container">
-          <span class="label-text">Komentarz</span>
-          <textarea class="textarea-style" name="feedback" rows="5" placeholder="Wprowadź tekst"></textarea>
+        <label class="signup-form__container">
+          <span class="signup-form__description">Komentarz</span>
+          <textarea class="signup-form__textarea" name="feedback" rows="5" placeholder="Wprowadź tekst"></textarea>
         </label>
   </div>
+
+
   <div class="inner">
 
-    <input type="checkbox" name="cb" id="cb">
-    <label class="checkbox-label" for="cb" id="checkbox">
-        <svg class="checkbox-svg" viewBox="0 0 100 100" width="16px" height="15px">
-          <path class="check-box" d="M82,89H18c-3.87,0-7-3.13-7-7V18c0-3.87,3.13-7,7-7h64c3.87,0,7,3.13,7,7v64C89,85.87,85.87,89,82,89z"/>
-            <polyline class="check hidden-check" points="25.5,53.5 39.5,67.5 72.5,34.5 "/>
-        </svg>
+    <label class="check option">
+      <input class="check__input" type="checkbox">
+      <span class="check__box"></span>
+          </label>
         <p class="form-description" for="privacy-policy">Oświadczam iż akceptuję <a class="privacy-policy"  href="/">Regulamin</a> i <a class="privacy-policy" href="/">Politykę Prywatności.</a>
         </p>
-    </label>
+    
 </div>
 
     
