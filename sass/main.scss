@@ -1,63 +1,64 @@
 @import 'utils/variables.scss';
 
+
+  
 body {
     
-  font-family: $PrimaryFontFamily, $SecondaryFontFamily;
-  box-sizing: border-box;
-  font-size:14px;
-  letter-spacing: 0.3em;
-  }
-  li {
-    list-style: none;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    margin: 0;
-  }
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-  ul,
-  ol {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-  }
-  a {
-    text-decoration: none;
-  }
-  address {
-    font-style: normal;
-  }
-  button {
-    display: block;
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-  }
-  form{
-    display:flex;
-    flex-direction: column;
-  }
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  
-  .container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-  
+    font-family: $PrimaryFontFamily, $SecondaryFontFamily;
+    box-sizing: border-box;
+    font-size:14px;
+    letter-spacing: 0.3em;
+    }
+    li {
+      list-style: none;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      margin: 0;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+    ul,
+    ol {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    address {
+      font-style: normal;
+    }
+
+    button {
+      display: block;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+    }
+    form{
+      display:flex;
+      flex-direction: column;
+    }
+    .section {
+        padding: 94px 15px;
+    }
+    
+    .container {
+      width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
   /* ====== SAME COMPONENTS ====== */
   
   .company-name--web-color {
@@ -81,9 +82,7 @@ body {
     width: 145px;
     height: 31px;
   }
-  .section {
-    padding: 94px 15px;
-  }
+
   /* ====== END SAME COMPONENTS ====== */
   
   /* ====== HEADER ====== */
@@ -102,7 +101,7 @@ body {
   
   .header-list__item {
     text-decoration: none;
-    font-weight: 500;
+    font-weight:  map-get($FontWeight, medium );
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
@@ -154,7 +153,7 @@ body {
   .contact-list__item {
     display: inline-block;
     text-decoration: none;
-    font-weight: 500;
+    font-weight:  map-get($FontWeight, medium );
     font-size: 14px;
     line-height: 1.143;
     color:$PrimaryFontColor;
@@ -278,7 +277,7 @@ body {
     line-height: 1.714;
     letter-spacing: .03em;
     color: $PrimaryFontColor;
-    font-weight: 400;
+    font-weight:  map-get($FontWeight, regular );
     font-family: $PrimaryFontFamily;
   }
   .assets-section__item {
@@ -356,7 +355,7 @@ body {
   }
   .our-team__name {
     font-family:$PrimaryFontFamily;
-    font-weight: 500;
+    font-weight:500;
     font-size: 16px;
     line-height: 1.188;
     color: $SecondaryFontColor;
@@ -364,7 +363,7 @@ body {
   }
   .our-team__occupation {
     font-family:$PrimaryFontFamily;
-    font-weight: 400;
+    font-weight:  map-get($FontWeight, regular );
     font-size: 16px;
     line-height: 1.188;
     color: $PrimaryFontColor;
@@ -496,7 +495,7 @@ body {
     font-family:$PrimaryFontFamily;
     letter-spacing: 0.03em;
     color: $SecondaryFontColor;
-    font-weight: 700;
+    font-weight:  map-get($FontWeight, bold );
     margin-bottom: 50px;
     }
   
@@ -532,7 +531,7 @@ body {
   }
   
   .footer-section__link{
-    font-weight: 400;
+    font-weight: map-get($FontWeight, regular );
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
     font-family: $PrimaryFontFamily;
@@ -645,7 +644,7 @@ body {
           width: 358px;
           height: 50px;
           font-family: $PrimaryFontFamily;
-          font-weight: 400;
+          font-weight:  map-get($FontWeight, regular );
           font-size: 16px;
           line-height: 1.25;
           display: flex;
@@ -798,7 +797,7 @@ body {
   
   .signup-form__description{
     font-family: $PrimaryFontFamily;
-    font-weight: 400;
+    font-weight:  map-get($FontWeight, regular );
     font-size: 12px;
     letter-spacing: 0.01em;
     color:$PrimaryFontColor;
@@ -814,7 +813,7 @@ body {
     height:40px;
     padding-left:42px;
   font-family: $PrimaryFontFamily;
-  font-weight: 400;
+  font-weight:  map-get($FontWeight, regular );
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.01em;
@@ -828,7 +827,7 @@ body {
     resize: none;
     font-family: $PrimaryFontFamily;
     width: 100%;
-    font-weight: 400;
+    font-weight:  map-get($FontWeight, regular );
     font-size: 12px;
     line-height: 1.67;
     letter-spacing: 0.01em;
@@ -901,7 +900,7 @@ body {
   }
   .form-description{
   font-family: $PrimaryFontFamily;
-  font-weight: 400;
+  font-weight:  map-get($FontWeight, regular );
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -1004,7 +1003,7 @@ body {
     line-height: 1.625;
     color: $SecondaryFontColor;
     letter-spacing: .03em;
-    font-weight: 500;
+    font-weight:  map-get($FontWeight, medium );
     border: none;
     border-radius: 4px;
     padding: 6px 22px;
@@ -1052,7 +1051,7 @@ body {
   
   .categories__description{
     font-family: $PrimaryFontFamily;
-    font-weight: 400;
+    font-weight:  map-get($FontWeight, regular );
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.03em;
@@ -1116,7 +1115,7 @@ body {
     line-height: 1.85;
     color: $PrimaryFontColor;
     letter-spacing: 0.03em;
-    font-weight: 400;
+    font-weight:  map-get($FontWeight, regular );
   }
   
   /* ====== END CATEGORIES SECTION ====== */
