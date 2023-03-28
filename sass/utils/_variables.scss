@@ -33,9 +33,7 @@ $PrimaryFontFamily:"Roboto", sans-serif;
 $SecondaryFontFamily:"Raleway", sans-serif;
 $DetailColor: #000000;
 
-$FontWeight: (
-"regular":400,
-"medium":500,
-"bold":700,
-"extrabold":900,
-)
+$FontWeightRegular:400;
+$FontWeightMedium:500;
+$FontWeightBold:700;
+$FontWeightExtrabold:900;
