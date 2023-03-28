@@ -1,7 +1,7 @@
 
- body {
+body {
     
-  font-family: $PrimaryFontFamily,$SecondaryFontFamily;
+  font-family: $PrimaryFontFamily, $SecondaryFontFamily;
   box-sizing: border-box;
   font-size:14px;
   letter-spacing: 0.3em;
@@ -336,7 +336,7 @@
   
   /* ====== TEAM SECTION ====== */
   .our-team {
-    background-color: var(--third-background);
+    background-color:$TertiaryBG;
     padding: 94px 0px;
   }
   .our-team__list {
@@ -371,7 +371,7 @@
     letter-spacing: 0.03em;
   }
   .our-team__item {
-    background-color: var(--third-background);
+    background-color: $TertiaryBG;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: $QuaternaryBG;
@@ -997,7 +997,7 @@
   }
   
   .button {
-    background-color: var(--button-background);
+    background-color: $SecondPageMenuButtonBG;
     font-family: '$PrimaryFontFamily';
     font-size: 16px;
     line-height: 1.625;
