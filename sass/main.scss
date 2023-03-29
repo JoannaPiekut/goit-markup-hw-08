@@ -665,10 +665,10 @@ body {
           transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
           padding-left: 16px;
         }
-  
         .footer-form__input:hover{
           border-color: $ActiveColor
         }
+    
   
   
         .submit-button{
@@ -688,21 +688,19 @@ body {
           align-items: center;
           gap:24px;
           justify-content: center;
-          }
+          
   
-        .submit-button__svg{
+          &__svg{
           display: flex;
           align-items: center;
   
         }
   
-        .submit-button__icon{
+        &__icon{
           transform: translate(-50%, -50%); 
         } 
-  /* 
-        #icon-send.icon-send{
-        
-        } */
+    }
+
   
   /* ====== END FOOTER SECTION ====== */
   
@@ -732,6 +730,17 @@ body {
   transform: translate(-50%, -50%);
   padding-bottom: 40px;
   }
+
+  .modal--svg-close{
+    display: flex;
+    align-items: center;
+  }
+  
+  .modal--icon-close{
+    transform: translate(-50%, -50%); 
+    width:11px;
+    height: 11px;
+  } 
   
   .close-btn{
     position:absolute;
@@ -752,16 +761,7 @@ body {
   
   }
   
-  .modal--svg-close{
-    display: flex;
-    align-items: center;
-  }
-  
-  .modal--icon-close{
-    transform: translate(-50%, -50%); 
-    width:11px;
-    height: 11px;
-  } 
+
   
   .is-hidden{
     opacity: 0;
@@ -938,9 +938,8 @@ body {
   
   .check {
     padding-left: 32px;
-  }
-  
-  .check__input {
+    
+  &__input {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
@@ -948,7 +947,7 @@ body {
     margin: -1px;
   }
   
-  .check__box {
+  &__box {
     position: absolute;
     margin-top: -5px;
     margin-left: -20px;
@@ -965,7 +964,7 @@ body {
   
   /* Checked */
   
-  .check__input:checked + .check__box {
+  &__input:checked + &__box {
     background-image: url(/images/icon-check.svg);
     border: none;
   }
@@ -978,10 +977,11 @@ body {
   
   /* Disabled */
   
-  .check__input:disabled + .check__box {
+  &__input:disabled + &__box {
     border: 2px solid #000000;
     background-color: white;
   }
+}
   
   
   
@@ -1014,19 +1014,27 @@ body {
     padding: 6px 22px;
     transition-property: background-color, color, box-shadow;
     transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
     
-  }
-  .button:hover,
-  .button:focus {
+    &__:hover,
+    &__:focus {
     background-color: $ActiveColor;
     color: $QuaternaryBG;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   }
+}
   /* ====== END MENU SECTION ====== */
   
   /* ====== CATEGORIES SECTION ====== */
-  .categories__list {
+  
+  .category-menu{
+    padding-bottom: 0%;
+  }
+
+  .categories {
+    padding-top: 50px;
+  
+  &__list {
     display: flex;
     flex-wrap: wrap;
     padding-inline-start: 0px;
@@ -1034,16 +1042,8 @@ body {
     max-width: 100%;
     flex-basis: calc((100% - 2*30px) / 3)
    }
-  
-  
-  .categories {
-    padding-top: 50px;
-  }
-  .category-menu{
-    padding-bottom: 0%;
-  }
-  
-   .categories__overlay{
+    
+   &__overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -1054,7 +1054,7 @@ body {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
      }
   
-  .categories__description{
+     &__description{
     font-family: $PrimaryFontFamily;
     font-weight:  map-get($FontWeightRegular );
     font-size: 18px;
@@ -1066,13 +1066,13 @@ body {
     padding:20px;
    } 
   
-   .categories__link:hover .categories__overlay, 
-   .categories__link:focus .categories__overlay  {
+   &__link:hover &__overlay, 
+   &__link:focus &__overlay  {
     transform: translateY(0);
   }
   
   
-   .categories__card{
+  &__card{
     width: 370px;
     height: 294px;
     position: relative;
@@ -1081,32 +1081,30 @@ body {
    }
   
   
-  .categories__link{
+   &__link{
     display: block ;
     border: 1px solid #EEEEEE;
     height:100%;
     display: block;
     margin-inline-end: 30px;
-    margin: 0px
+    margin: 0px;
+    transition-property: categories__card-shadow;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
     
   }
   
   
   
-  .categories__caption {
+  &__caption {
     margin: 20px 24px 20px 24px;
   }
-  .categories__link{
-    transition-property: categories__card-shadow;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
-  }
-  .categories__link:hover,
-  .categories__link:focus{
+    &__link:hover,
+    &__link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   
-  .categories__title {
+  &__title {
     font-weight: $FontWeightBold;
     font-size: 18px;
     line-height: 1.444;
@@ -1114,7 +1112,7 @@ body {
     color: $DetailColor;
     font-family: $PrimaryFontFamily;
   }
-  .categories__subtitle {
+  &__subtitle {
     font-size: 16px;
     font-family: $PrimaryFontFamily;
     line-height: 1.85;
@@ -1122,6 +1120,7 @@ body {
     letter-spacing: 0.03em;
     font-weight:  map-get($FontWeightRegular );
   }
+}
   
   /* ====== END CATEGORIES SECTION ====== */
   
