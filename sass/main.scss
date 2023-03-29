@@ -111,9 +111,8 @@ body {
   .header-list{
     display: flex;
     gap: 46px ;
-  }
   
-  .header-list__link {
+  &__link {
     color: $SecondaryFontColor;
     text-decoration: none;
     transition-property: color;
@@ -121,16 +120,17 @@ body {
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   
   }
-  .header-list__link:hover,
-  .header-list__link:focus {
+  &__link:hover,
+  &__link:focus {
     color: $ActiveColor;
   }
+}
   
   .after{
     color: $ActiveColor;
     position: relative;
-  }
-  .after::after{
+  
+  &::after{
   content: "";
   display: block;
   width: 100%;
@@ -140,17 +140,18 @@ body {
   border-radius: 4px;
   margin-top: 28px;
   }
+}
   
   .header__navigation{
     margin-left: 93px;
   }
   
-  .section-right{
+  .contact-list{
      margin-left:auto;
      display: flex;
      gap: 50px;
-  }
-  .contact-list__item {
+  
+  &__item {
     display: inline-block;
     text-decoration: none;
     font-weight:  map-get($FontWeightMedium );
@@ -158,11 +159,9 @@ body {
     line-height: 1.143;
     color:$PrimaryFontColor;
     letter-spacing: .03em;
-    justify-content: space-between; 
-  
-    
+    justify-content: space-between;   
   }
-  .contact-list__link {
+  &__link {
     color: $PrimaryFontColor;
     text-decoration: none;
     display:flex;
@@ -172,23 +171,23 @@ body {
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .contact-list__link:hover,
-  .contact-list__link:focus{
+  &__link:hover,
+  &__link:focus{
     color: $ActiveColor;
   }
   
-  .contact-list__icon{
+  &__icon{
     fill: currentColor;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  
-   .contact-list__icon{
     width: 18px;
     height: 14px;
-     }
+  }
+}
+  
+  
+ 
   
   
   /* ====== END HEADER ====== */
@@ -204,8 +203,8 @@ body {
     max-width: 1600px;
     margin:0 auto;
     padding:200px 0;
-  }
-  .main-section__title {
+  
+  &__title {
     color: $QuaternaryFontColor;
     width: 696px;
     text-align: center;
@@ -216,7 +215,7 @@ body {
     margin-bottom: 30px;
   }
   
-  .main-section__button .link {
+  &__button .link {
     display: flex;
     color: $QuaternaryFontColor;
     background-color: $MainButtonBG;
@@ -233,18 +232,19 @@ body {
   margin:0 auto;
   justify-content: center;
   }
+}
   /* ====== END MAIN SECTION ====== */
   
   /* ====== ASSETS SECTION ====== */
   .assets-section{
      padding: 94px 0px;
-  }
-  .assets-section__list {
+  
+  &__list {
     display: flex;
     gap:30px;
   }
   
-  .assets-section__group{
+  &__group{
     background-color: $TertiaryBG;
     border-radius: 4px;
     height:120px;
@@ -255,14 +255,14 @@ body {
     position: relative;
   }
   
-  .assets-section__icon{
+  &__icon{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
    }
   
-  .assets-section__header {
+   &__header {
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.03em;
@@ -272,7 +272,7 @@ body {
     font-family: $PrimaryFontFamily;
     color: $SecondaryFontColor
   }
-  .assets-section__description {
+  &__description {
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: .03em;
@@ -280,16 +280,19 @@ body {
     font-weight:  map-get($FontWeightRegular );
     font-family: $PrimaryFontFamily;
   }
-  .assets-section__item {
+  &__item {
     justify-content: space-between;
     flex-direction: column;
   }
+}
   
   /* ====== END ASSETS SECTION ====== */
   
   /* ====== SERVICE SECTION ====== */
+  .service {
+    padding-top: 0px;
   
-  .service__header {
+    &__header {
     font-weight: $FontWeightBold;
     font-size: 36px;
     line-height: 1.167;
@@ -298,23 +301,21 @@ body {
     letter-spacing: 0.03em;
     color: $SecondaryFontColor
   }
-  .service {
-    padding-top: 0px;
-  }
-  .service__list {
+ 
+  &__list {
     display: flex;
     justify-content: space-between;
     padding-inline-start: 0px;
   }
   
-  .service__thumb{
+  &__thumb{
     position: relative;
   }
-  .service__image{
+  &__image{
     display: block;
   }
   
-  .service__description{
+  &__description{
     font-family: $PrimaryFontFamily;
     font-weight: $FontWeightBold;
     font-size: 14px;
@@ -331,6 +332,7 @@ body {
     align-items: center;
     justify-content: center;
   }
+}
   
   /* ====== END SERVICE SECTION ====== */
   
@@ -338,12 +340,12 @@ body {
   .our-team {
     background-color:$TertiaryBG;
     padding: 94px 0px;
-  }
-  .our-team__list {
+  
+  &__list {
     display: flex;
     gap: 30px;
   }
-  .our-team__header {
+  &__header {
     font-size: 36px;
     line-height: 1.167;
     text-align: center;
@@ -353,7 +355,7 @@ body {
     color: $SecondaryFontColor;
     font-weight: $FontWeightBold;
   }
-  .our-team__name {
+  &__name {
     font-family:$PrimaryFontFamily;
     font-weight:$FontWeightMedium;
     font-size: 16px;
@@ -361,7 +363,7 @@ body {
     color: $SecondaryFontColor;
     letter-spacing: 0.03em;
   }
-  .our-team__occupation {
+  &__occupation {
     font-family:$PrimaryFontFamily;
     font-weight:  map-get($FontWeightRegular );
     font-size: 16px;
@@ -370,7 +372,7 @@ body {
     margin-top: 10px;
     letter-spacing: 0.03em;
   }
-  .our-team__item {
+  &__item {
     background-color: $TertiaryBG;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -378,24 +380,24 @@ body {
     margin: 0 auto;
   }
   
-  .our-team__item:hover,
-  .our-team__item:focus{
+  &__item:hover,
+  &__item:focus{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25), 0px 1px 1px rgba(0, 0, 0, 0.25), 0px 2px 1px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 4px 4px;  
   }
   
-  .our-team__description {
+  &__description {
     text-align: center;
     padding: 30px 0px;
   }
+}
   .social{
     display:flex;
     justify-content:center;
     gap:10px;
     margin-top:16px;
-  }
-  
-  .social__link{
+    
+  &__link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -409,25 +411,25 @@ body {
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
   
   }
-  .social__svg{
+  &__svg{
   fill: currentColor;
   transition-property:color, background-color;
   transition-duration: 250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
   }
   
-  .social__link:hover,
-  .social__link:focus{
+  &__link:hover,
+  &__link:focus{
     background-color: $ActiveColor;
     color:#fff
   }
   
-  .social__svg:hover, 
-  .social__svg:focus{
+  &__svg:hover, 
+  &__svg:focus{
     fill:$SecondaryIconColor;
   }
   
-  .social__icon{
+  &__icon{
     transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
@@ -437,24 +439,25 @@ body {
   transform: translate(-50%, -50%);
   }
   
-  .social__icon:hover,
-  .social__icon:focus{
+  &__icon:hover,
+  &__icon:focus{
     fill:$SecondaryIconColor 
   }
+}
   
   /* ====== END TEAM SECTION ====== */
   
   /* ====== CUSTOMERS SECTION ====== */
+
   .customers{
   padding: 94px 0px;
-  }
-  
-  .customers__list{
+    
+  &__list{
     display: flex;
     gap: 30px;
   
   }
-  .customers__link{
+  &__link{
     border: 1px solid currentColor;
     border-radius: 4px ;
     color:$PrimaryIconColor ;
@@ -468,13 +471,13 @@ body {
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
   }
   
-  .customers__link:hover,
-  .customers__link:focus{
+  &__link:hover,
+  &__link:focus{
     color: $ActiveColor;
    
   }
   
-  .customers__icon{
+  &__icon{
     fill: currentColor;
     transition-property: fill;
   transition-duration: 250ms;
@@ -488,7 +491,7 @@ body {
   
   
   
-  .customers__header{
+  &__header{
     font-size: 36px;
     line-height: 1.167;
     text-align: center;
@@ -498,6 +501,7 @@ body {
     font-weight:  map-get($FontWeightBold );
     margin-bottom: 50px;
     }
+}
   
   /* ====== END CUSTOMERS SECTION ====== */
   
@@ -511,16 +515,16 @@ body {
      align-items: baseline;
     gap:70px;
    }
-  .footer-section {
-    background-color: $SecondaryBG;
-    padding: 60px 0px;
-  }
-  
+ 
   .left-side-footer{
     min-width: 25%;
   }
   
-  .footer-section__description {
+  .footer-section {
+    background-color: $SecondaryBG;
+    padding: 60px 0px;
+  
+  &__description {
     font-family: $PrimaryFontFamily;
     font-size: 14px;
     line-height: 1.714;
@@ -530,7 +534,7 @@ body {
     padding-bottom: 10px;
   }
   
-  .footer-section__link{
+  &__link{
     font-weight: map-get($FontWeightRegular);
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
@@ -543,18 +547,18 @@ body {
   transition-duration: 250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
   }
-  .footer-section__link:hover,
-  .footer-section__link:focus {
+  &__link:hover,
+  &__link:focus {
     color: $ActiveColor;
   }
+}
   
   
   .join-us{
     display:flex;
     flex-direction: column;
-  }
-  
-  .join-us__header{
+    
+  &__header{
     display: flex;
     flex-direction: row;
     font-size: 14px;
@@ -566,37 +570,37 @@ body {
     font-weight: $FontWeightBold;
     }
   
-    .join-us__list{
+    &__list{
       display: flex;
       justify-content:flex-start;
     }
-    .join-us__item{
+    &__item{
       display:flex;
       justify-content:flex-start;
       margin-right: 10px;
     }
     
-    .join-us__links--footer:hover,
-    .join-us__links--footer:focus{
+    &__links--footer:hover,
+    &__links--footer:focus{
     background-color: $ActiveColor
     }
   
     
-    .join-us__icon{
+    &__icon{
       fill: $SecondaryIconColor;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
-     .join-us__links{
+     &__links{
       display:flex;
       justify-content:center;
       padding-inline-start:0px;
       padding-bottom: 20px;
       flex-direction: column;  
     }
-    .join-us__links--footer{
+    &__links--footer{
       display: flex;
       align-items: center;
       justify-content: center;
@@ -612,12 +616,13 @@ body {
       transition-duration: 250ms;
       transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
        }
-      .join-us__svg{
+      &__svg{
        position: absolute;
        top: 50%;
        left: 50%;
        transform: translate(-50%, -50%);
       }
+    }
   
       .footer-form__group{
         display: flex;
@@ -641,7 +646,7 @@ body {
   
        
         .footer-form__input{
-          width: 358px;
+          width: 305px;
           height: 50px;
           font-family: $PrimaryFontFamily;
           font-weight:  map-get($FontWeightRegular );
