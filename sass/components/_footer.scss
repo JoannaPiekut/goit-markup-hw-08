@@ -1,0 +1,198 @@
+ /* ====== FOOTER SECTION ====== */
+  
+ .company-name--studio-color {
+    color: $QuaternaryFontColor;
+  }
+  .container--footer {
+     display: flex;
+     align-items: baseline;
+    gap:70px;
+   }
+ 
+  .left-side-footer{
+    min-width: 25%;
+  }
+  
+  .footer-section {
+    background-color: $SecondaryBG;
+    padding: 60px 0px;
+  
+  &__description {
+    font-family: $PrimaryFontFamily;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: .03em;
+    color: $QuaternaryFontColor;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  
+  &__link{
+    font-weight: map-get($FontWeightRegular);
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: $PrimaryFontFamily;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    background-color: $SecondaryBG;
+    transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $ActiveColor;
+  }
+}
+  
+  
+  .join-us{
+    display:flex;
+    flex-direction: column;
+    
+  &__header{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    line-height: 1.167;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 0.03em;
+    color:$QuaternaryFontColor;
+    font-weight: $FontWeightBold;
+    }
+  
+    &__list{
+      display: flex;
+      justify-content:flex-start;
+    }
+    &__item{
+      display:flex;
+      justify-content:flex-start;
+      margin-right: 10px;
+    }
+    
+    &__links--footer:hover,
+    &__links--footer:focus{
+    background-color: $ActiveColor
+    }
+  
+    
+    &__icon{
+      fill: $SecondaryIconColor;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+     &__links{
+      display:flex;
+      justify-content:center;
+      padding-inline-start:0px;
+      padding-bottom: 20px;
+      flex-direction: column;  
+    }
+    &__links--footer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      position: relative;
+      border-radius: 50% ;
+      background-color:rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: space-evenly;
+      transition-property: background-color;
+      transition-duration: 250ms;
+      transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+       }
+      &__svg{
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+      }
+    }
+  
+      .footer-form__group{
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        
+      }
+  
+   
+      .footer-form__header{
+        display: flex;
+        font-size: 14px;
+        line-height: 1.167;
+        text-align: center;
+        margin-bottom: 20px;
+        letter-spacing: 0.03em;
+        color:$QuaternaryFontColor;
+        font-weight: $FontWeightBold;
+        text-transform: uppercase;
+        }
+  
+       
+        .footer-form__input{
+          width: 305px;
+          height: 50px;
+          font-family: $PrimaryFontFamily;
+          font-weight:  map-get($FontWeightRegular );
+          font-size: 16px;
+          line-height: 1.25;
+          display: flex;
+          align-items: center;
+          letter-spacing: 0.03em;
+          color: rgba(255, 255, 255, 0.6);
+          background: $SecondaryBG;
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          border-radius: 4px;
+          transition-property: border-color;
+          transition-duration: 250ms;
+          transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+          padding-left: 16px;
+        }
+        .footer-form__input:hover{
+          border-color: $ActiveColor
+        }
+    
+  
+  
+        .submit-button{
+          width: 200px;
+          height: 50px;
+          background:$MainButtonBG;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          border-radius: 4px;
+          font-family: $PrimaryFontFamily;
+          font-weight: $FontWeightBold;
+          font-size: 16px;
+          line-height: 1.875;
+          letter-spacing: 0.06em;
+          color: $QuaternaryFontColor;
+          fill: $SecondaryIconColor;
+          display: flex;
+          align-items: center;
+          gap:24px;
+          justify-content: center;
+          
+  
+          &__svg{
+          display: flex;
+          align-items: center;
+  
+        }
+  
+        &__icon{
+          transform: translate(-50%, -50%); 
+        } 
+    }
+
+  
+  /* ====== END FOOTER SECTION ====== */

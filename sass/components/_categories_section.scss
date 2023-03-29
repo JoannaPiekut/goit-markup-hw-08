@@ -1,0 +1,96 @@
+ /* ====== CATEGORIES SECTION ====== */
+  
+ .category-menu{
+    padding-bottom: 0%;
+  }
+
+  .categories {
+    padding-top: 50px;
+  
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline-start: 0px;
+    gap: 24px;
+    max-width: 100%;
+    flex-basis: calc((100% - 2*30px) / 3)
+   }
+    
+   &__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 294px;
+    transform: translateY(100%);
+    background: rgba(33, 150, 243, 0.9);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     }
+  
+     &__description{
+    font-family: $PrimaryFontFamily;
+    font-weight:  map-get($FontWeightRegular );
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    color:$QuaternaryFontColor;
+    display: flex;
+    align-items: center;
+    padding:20px;
+   } 
+  
+   &__link:hover &__overlay, 
+   &__link:focus &__overlay  {
+    transform: translateY(0);
+  }
+  
+  
+  &__card{
+    width: 370px;
+    height: 294px;
+    position: relative;
+    overflow: hidden;
+    display:flex
+   }
+  
+  
+   &__link{
+    display: block ;
+    border: 1px solid #EEEEEE;
+    height:100%;
+    display: block;
+    margin-inline-end: 30px;
+    margin: 0px;
+    transition-property: categories__card-shadow;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+    
+  }
+    
+  &__caption {
+    margin: 20px 24px 20px 24px;
+  }
+    &__link:hover,
+    &__link:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  &__title {
+    font-weight: $FontWeightBold;
+    font-size: 18px;
+    line-height: 1.444;
+    letter-spacing: 0.06em;
+    color: $DetailColor;
+    font-family: $PrimaryFontFamily;
+  }
+  &__subtitle {
+    font-size: 16px;
+    font-family: $PrimaryFontFamily;
+    line-height: 1.85;
+    color: $PrimaryFontColor;
+    letter-spacing: 0.03em;
+    font-weight:  map-get($FontWeightRegular );
+  }
+}
+  
+  /* ====== END CATEGORIES SECTION ====== */

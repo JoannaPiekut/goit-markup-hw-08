@@ -1,0 +1,80 @@
+body {
+    
+    font-family: $PrimaryFontFamily, $SecondaryFontFamily;
+    box-sizing: border-box;
+    font-size:14px;
+    letter-spacing: 0.3em;
+    }
+    li {
+      list-style: none;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      margin: 0;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+    ul,
+    ol {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    address {
+      font-style: normal;
+    }
+
+    button {
+      display: block;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+    }
+    form{
+      display:flex;
+      flex-direction: column;
+    }
+    .section {
+        padding: 94px 15px;
+    }
+    
+    .container {
+      width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+  /* ====== SAME COMPONENTS ====== */
+  
+  .company-name--web-color {
+    color: $TertiaryFontColor;
+  }
+  .company-name {
+    font-family: $SecondaryFontFamily, sans-serif;
+    font-weight: $FontWeightBold;
+    font-size: 26px;
+    line-height: 1.192;
+    color: $DetailColor;
+    letter-spacing: 0.03em;
+  }
+  
+  .link {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .logo {
+    width: 145px;
+    height: 31px;
+  }

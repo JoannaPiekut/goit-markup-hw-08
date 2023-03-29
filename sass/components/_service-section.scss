@@ -1,0 +1,47 @@
+  /* ====== SERVICE SECTION ====== */
+  .service {
+    padding-top: 0px;
+  
+    &__header {
+    font-weight: $FontWeightBold;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 0.03em;
+    color: $SecondaryFontColor
+  }
+ 
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 0px;
+  }
+  
+  &__thumb{
+    position: relative;
+  }
+  &__image{
+    display: block;
+  }
+  
+  &__description{
+    font-family: $PrimaryFontFamily;
+    font-weight: $FontWeightBold;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $QuaternaryFontColor;
+    height: 70px;
+    width: 370px;
+    background: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+  
+  /* ====== END SERVICE SECTION ====== */

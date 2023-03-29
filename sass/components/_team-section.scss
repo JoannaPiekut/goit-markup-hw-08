@@ -1,0 +1,110 @@
+ /* ====== TEAM SECTION ====== */
+ .our-team {
+    background-color:$TertiaryBG;
+    padding: 94px 0px;
+  
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__header {
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family:$PrimaryFontFamily;
+    letter-spacing: 0.03em;
+    color: $SecondaryFontColor;
+    font-weight: $FontWeightBold;
+  }
+  &__name {
+    font-family:$PrimaryFontFamily;
+    font-weight:$FontWeightMedium;
+    font-size: 16px;
+    line-height: 1.188;
+    color: $SecondaryFontColor;
+    letter-spacing: 0.03em;
+  }
+  &__occupation {
+    font-family:$PrimaryFontFamily;
+    font-weight:  map-get($FontWeightRegular );
+    font-size: 16px;
+    line-height: 1.188;
+    color: $PrimaryFontColor;
+    margin-top: 10px;
+    letter-spacing: 0.03em;
+  }
+  &__item {
+    background-color: $TertiaryBG;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: $QuaternaryBG;
+    margin: 0 auto;
+  }
+  
+  &__item:hover,
+  &__item:focus{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25), 0px 1px 1px rgba(0, 0, 0, 0.25), 0px 2px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 4px 4px;  
+  }
+  
+  &__description {
+    text-align: center;
+    padding: 30px 0px;
+  }
+}
+  .social{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:16px;
+    
+  &__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    position: relative;
+    color:$PrimaryIconColor;
+    transition-property:background-color;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+  
+  }
+  &__svg{
+  fill: currentColor;
+  transition-property:color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+  }
+  
+  &__link:hover,
+  &__link:focus{
+    background-color: $ActiveColor;
+    color:#fff
+  }
+  
+  &__svg:hover, 
+  &__svg:focus{
+    fill:$SecondaryIconColor;
+  }
+  
+  &__icon{
+    transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  
+  &__icon:hover,
+  &__icon:focus{
+    fill:$SecondaryIconColor 
+  }
+}
+  
+  /* ====== END TEAM SECTION ====== */
