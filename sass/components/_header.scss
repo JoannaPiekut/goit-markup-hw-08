@@ -21,33 +21,26 @@
     position: relative;
   }
   
-  .header-list{
-    // display: flex;
-    gap: 46px ;
-  
+  .header-list {
+    display: none;
+    
+    @include tablet {
+      display: flex;
+      gap: 46px;
+    }
+
   &__link {
     color: $SecondaryFontColor;
     text-decoration: none;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-  
-  }
-  &__link:hover,
-  &__link:focus {
-    color: $ActiveColor;
+
+    &:is(:hover, :focus) {
+      color: $ActiveColor;
+    }
   }
 }
-  .header-list {
-    @include mobile{
-    display: none;
-    }
-    @include tablet {
-      display: flex;
-      gap: 46px;
-    }
-  }
-
   
   .after{
     color: $ActiveColor;
