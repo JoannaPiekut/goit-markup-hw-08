@@ -22,7 +22,7 @@
   }
   
   .header-list{
-    display: flex;
+    // display: flex;
     gap: 46px ;
   
   &__link {
@@ -38,6 +38,16 @@
     color: $ActiveColor;
   }
 }
+  .header-list {
+    @include mobile{
+    display: none;
+    }
+    @include tablet {
+      display: flex;
+      gap: 46px;
+    }
+  }
+
   
   .after{
     color: $ActiveColor;

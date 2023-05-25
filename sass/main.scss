@@ -1,14 +1,15 @@
-@import 'utils/variables.scss';
-@import 'utils/basics.scss';
-@import 'utils/header.scss';
-@import 'utils/main-section.scss';
-@import 'utils/assets-section.scss';
-@import 'utils/service-section.scss';
-@import 'utils/customers-section.scss';
-@import 'utils/footer.scss';
-@import 'utils/modal-window.scss';
-@import 'utils/menu-section.scss';
-@import 'utils/categories-section.scss';
+@import 'utils/variables';
+@import 'components/basics';
+@import 'components/header';
+@import 'components/main-section';
+@import 'components/assets-section';
+@import 'components/service-section';
+@import 'components/customers-section';
+@import 'components/footer';
+@import 'components/modal-window';
+@import 'components/menu-section';
+@import 'components/categories-section';
+@import 'utils/mixins'
   
  
   
