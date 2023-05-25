@@ -22,12 +22,12 @@
   }
   
   .header-list {
-    display: none;
+    // display: none;
     
-    @include tablet {
-      display: flex;
-      gap: 46px;
-    }
+    // @include tablet {
+    //   display: flex;
+    //   gap: 46px;
+    // }
 
   &__link {
     color: $SecondaryFontColor;
@@ -60,6 +60,12 @@
   
   .header__navigation{
     margin-left: 93px;
+    display: none;
+    
+    @include tablet {
+      display: flex;
+      gap: 46px;
+    }
   }
   
   .contact-list{
