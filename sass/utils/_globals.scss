@@ -1,0 +1,39 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *:focus {
+    outline: none;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .section {
+    padding: 60px 0;
+  
+    @include desktop {
+      padding: 94px 0;
+    } 
+  }
+  
+  .container {
+      max-width: 480px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 15px;
+  
+      @include tablet {
+          max-width: 768px;
+      }
+      @include desktop {
+          max-width: 1200px;
+      }
+  }
