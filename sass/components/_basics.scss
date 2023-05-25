@@ -70,7 +70,7 @@ body {
   }
   .company-name {
     font-family: $SecondaryFontFamily, sans-serif;
-    font-weight: $FontWeightBold;
+    font-weight: getFontWeight("Bold");
     font-size: 26px;
     line-height: 1.192;
     color: $DetailColor;

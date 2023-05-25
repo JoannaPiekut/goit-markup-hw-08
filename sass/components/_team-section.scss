@@ -15,11 +15,11 @@
     font-family:$PrimaryFontFamily;
     letter-spacing: 0.03em;
     color: $SecondaryFontColor;
-    font-weight: $FontWeightBold;
+    font-weight: getFontWeight("Bold");
   }
   &__name {
     font-family:$PrimaryFontFamily;
-    font-weight:$FontWeightMedium;
+    font-weight: getFontWeight("Medium");
     font-size: 16px;
     line-height: 1.188;
     color: $SecondaryFontColor;
@@ -27,7 +27,7 @@
   }
   &__occupation {
     font-family:$PrimaryFontFamily;
-    font-weight:  map-get($FontWeightRegular );
+    font-weight: getFontWeight("Regular");
     font-size: 16px;
     line-height: 1.188;
     color: $PrimaryFontColor;

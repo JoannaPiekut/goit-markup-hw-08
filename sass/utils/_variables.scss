@@ -33,7 +33,14 @@ $PrimaryFontFamily:"Roboto", sans-serif;
 $SecondaryFontFamily:"Raleway", sans-serif;
 $DetailColor: #000000;
 
-$FontWeightRegular:400;
-$FontWeightMedium:500;
-$FontWeightBold:700;
-$FontWeightExtrabold:900;
+$FontWeight:(
+"Regular":400,
+"Medium":500,
+"Bold":700,
+"Extrabold":900
+);
+
+
+@function getFontWeight($key){
+    @return map-get($FontWeight, $key)
+}

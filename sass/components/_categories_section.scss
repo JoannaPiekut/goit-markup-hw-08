@@ -29,7 +29,7 @@
   
      &__description{
     font-family: $PrimaryFontFamily;
-    font-weight:  map-get($FontWeightRegular );
+    font-weight:  getFontWeight("Regular");
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.03em;
@@ -76,7 +76,7 @@
   }
   
   &__title {
-    font-weight: $FontWeightBold;
+    font-weight: getFontWeight("Bold");
     font-size: 18px;
     line-height: 1.444;
     letter-spacing: 0.06em;
@@ -89,7 +89,7 @@
     line-height: 1.85;
     color: $PrimaryFontColor;
     letter-spacing: 0.03em;
-    font-weight:  map-get($FontWeightRegular );
+    font-weight: getFontWeight("Regular");
   }
 }
   
