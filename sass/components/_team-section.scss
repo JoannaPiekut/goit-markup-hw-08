@@ -5,7 +5,18 @@
   
   &__list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
+    @include tablet{
+      flex-direction: row;
+      flex-wrap: wrap;
+      @include desktop{
+      flex-wrap: nowrap;
+      }
+    }
+
+ 
+    
   }
   &__header {
     font-size: 36px;
