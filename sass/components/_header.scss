@@ -22,12 +22,8 @@
   }
   
   .header-list {
-    // display: none;
-    
-    // @include tablet {
-    //   display: flex;
-    //   gap: 46px;
-    // }
+    display: flex;
+    gap: 46px;
 
   &__link {
     color: $SecondaryFontColor;
@@ -66,12 +62,30 @@
       display: flex;
       gap: 46px;
     }
+
+    @include desktop{
+      margin-left: 93px;
+      display: flex;
+      
+    }
   }
   
   .contact-list{
      margin-left:auto;
-     display: flex;
+     display: none;
      gap: 50px;
+
+     @include tablet{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+     }
+
+      @include desktop{
+        margin-left:auto;
+        flex-direction: row;
+        gap: 50px;
+      }
   
   &__item {
     display: inline-block;
