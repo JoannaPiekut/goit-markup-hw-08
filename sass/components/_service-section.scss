@@ -1,6 +1,11 @@
   /* ====== SERVICE SECTION ====== */
   .service {
     padding-top: 0px;
+    display: none;
+    @include desktop{
+      display: flex;
+    }
+  
   
     &__header {
     font-weight: getFontWeight("Bold");
@@ -16,6 +21,7 @@
     display: flex;
     justify-content: space-between;
     padding-inline-start: 0px;
+    flex-direction: row
   }
   
   &__thumb{
