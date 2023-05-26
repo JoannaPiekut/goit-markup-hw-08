@@ -12,15 +12,21 @@
    }
  
   .left-side-footer{
-    display: flex;
-    min-width: 25%;
-    flex-direction: column;
     text-align: center;
+    padding-bottom: 60px;
   }
   
   .footer-section {
     background-color: $SecondaryBG;
     padding: 60px 0px;
+
+  &__high{
+    @include tablet{
+    display: flex;
+    flex-direction: row;
+    gap:144px
+    }
+  }
 
   
   &__description {
@@ -66,17 +72,22 @@
     letter-spacing: 0.03em;
     color:$QuaternaryFontColor;
     font-weight: getFontWeight("Bold");
+  
     }
   
     &__list{
       display: flex;
-      justify-content:flex-start;
+      justify-content:center;
     }
     &__item{
       display:flex;
       justify-content:flex-start;
       margin-right: 10px;
     }
+    &__list:not(:last-child) {
+      margin-right: 0;
+    }
+
     
     &__links--footer:hover,
     &__links--footer:focus{
