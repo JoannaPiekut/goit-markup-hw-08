@@ -2,20 +2,20 @@
   .assets-section{
     padding: 94px 0px;
     display: flex;
-
+    align-content: center;
 
 
  &__list {
-   display: flex;
+  display: flex;
    gap:30px;
    flex-direction: column;
-   margin: 0 auto;
+
    
 
    @include tablet{
-   max-width: 1199px;
    flex-direction: row;
     flex-wrap: wrap;
+
     
    }
    @include desktop{
