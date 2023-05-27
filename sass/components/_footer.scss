@@ -145,19 +145,22 @@
        transform: translate(-50%, -50%);
       }
     }
-  
-      .footer-form__group{
-        display: flex;
+    .footer-form{
+      display: flex;
+      align-items: center;
+    }
+      &__group{
         flex-direction: column;
         gap: 12px;
-@include desktop{
-  flex-direction: row;
+        @include desktop{
+        flex-direction: row;
+
 }
         
       }
   
    
-      .footer-form__header{
+      &__header{
         font-size: 14px;
         line-height: 1.167;
         text-align: center;
@@ -172,7 +175,7 @@
         }
   
        
-        .footer-form__input{
+        &__input{
           width: 90vw;
           max-width: 450px;
           height: 50px;
@@ -197,7 +200,7 @@
           }
           }
         
-        .footer-form__input:hover{
+        &__input:hover{
           border-color: $ActiveColor
         }
     

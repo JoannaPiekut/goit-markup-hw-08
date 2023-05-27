@@ -9,6 +9,22 @@
     max-width: 1600px;
     margin:0 auto;
     padding:200px 0;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .main-section{
+      background-image: url('./images/header-background-image2x.jpg')
+    }
+    }
+
+    @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+      .main-section{
+      background-image: url('../images/header-background-image3x.jpg')
+    }
+    }
   
   &__title {
     color: $QuaternaryFontColor;
@@ -38,5 +54,6 @@
   margin:0 auto;
   justify-content: center;
   }
-}
-  /* ====== END MAIN SECTION ====== */
+
+
+  }
