@@ -280,7 +280,8 @@
   
   .mobile-social-media {
     display: flex;
-  justify-content: space-between;
+    justify-content: space-between;
+    margin-top: 64px;
     &__link {
       text-decoration: none;
       font-weight: 500;
