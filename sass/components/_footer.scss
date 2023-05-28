@@ -17,6 +17,12 @@
 
     }
    }
+
+   .form{
+    @include desktop {
+      flex-direction: row;
+  }
+   }
  
   .left-side-footer{
     text-align: center;
