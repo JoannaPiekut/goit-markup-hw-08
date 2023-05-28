@@ -12,6 +12,9 @@
     @include desktop{
       flex-direction: row;
       align-items: baseline;
+      justify-content: flex-start;
+
+
     }
    }
  
@@ -145,22 +148,33 @@
        transform: translate(-50%, -50%);
       }
     }
+
+    .footer__label {
+      display: flex;
+      align-items: center;  
+      @include desktop {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+    }
+
     .footer-form{
       display: flex;
       align-items: center;
-    
-      &__group{
-        flex-direction: column;
-        gap: 12px;
-        @include desktop{
+      @include desktop{
         flex-direction: row;
+        flex-wrap: nowrap;
+        }
+    }
+    .footer-form__group{
+        flex-direction: row;
+        gap: 12px;
 
-}
-        
       }
-  
+      
    
-      &__header{
+        .footer-form__header{
         font-size: 14px;
         line-height: 1.167;
         text-align: center;
@@ -175,7 +189,7 @@
         }
   
        
-        &__input{
+        .footer-form__input{
           width: 90vw;
           max-width: 450px;
           height: 50px;
@@ -195,15 +209,16 @@
           transition-duration: 250ms;
           transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
           padding-left: 16px;
+          margin-bottom: 20px;
           @include desktop{
             width: 358px;
           }
           }
         
-        &__input:hover{
+          .footer-form__input:hover{
           border-color: $ActiveColor
         }
-      }
+      
   
   
         .submit-button{
@@ -224,6 +239,9 @@
           gap:24px;
           justify-content: center;
           margin: 0 auto;
+          @include desktop{
+            margin: 0;
+          }
           
   
           &__svg{
