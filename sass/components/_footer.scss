@@ -93,6 +93,7 @@
     font-weight: getFontWeight("Bold");
     @include desktop{
       text-align: start;
+      margin-top: 12px
     }
   
     }
@@ -221,6 +222,8 @@
           margin-bottom: 20px;
           @include desktop{
             width: 358px;
+            margin-right: 12px;
+            align-items: baseline;
           }
           }
         
