@@ -14,8 +14,9 @@
     
     .modal{
     position: absolute;
-    max-width: 100%;
-    min-height: 581px;
+    max-width: 528px;
+    width: 100%;
+    height: inherit;
     background: $QuaternaryBG;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -40,8 +41,8 @@
       position:absolute;
       top:8px;
       right:8px;
-      width: 30px;
-      height: 30px;
+      width: 25px;
+      height: 25px;
       background-color: $QuaternaryBG;
       border:1px solid rgba(0, 0, 0, 0.1);
       border-radius: 50%;
@@ -74,7 +75,7 @@
     .signup-form__header{
     font-family: $PrimaryFontFamily;
     font-weight: getFontWeight("Bold");
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1.15px;
     text-align: center;
     letter-spacing: 0.03em;
@@ -84,6 +85,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     }
     
     .signup-form__container{
@@ -173,8 +175,8 @@
     }
     
     .submit-modal-button{
-      width:200px;
-      height:50px;
+      width: 160px;
+      height:40px;
       background:$MainButtonBG;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       border-radius: 4px;
@@ -185,7 +187,7 @@
       font-family: $PrimaryFontFamily;
       font-style: normal;
       font-weight: getFontWeight("Bold");
-      font-size: 16px;
+      font-size: 14px;
       line-height: 1.88;
       letter-spacing: 0.06em;
       color: $QuaternaryFontColor;
@@ -200,7 +202,7 @@
     .form-description{
     font-family: $PrimaryFontFamily;
     font-weight: getFontWeight("Regular");
-    font-size: 14px;
+    font-size: 10px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $PrimaryFontColor;
