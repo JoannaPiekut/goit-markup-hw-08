@@ -240,7 +240,7 @@
       font-size: 40px;
       line-height: 47px;
       display: block;
-      //   padding: 10px;
+      letter-spacing: 0.02em;
       color:$DetailColor;
       text-decoration: none;
     }
@@ -265,6 +265,7 @@
       font-size: 24px;
       line-height: 28px;
       color:$PrimaryFontColor;
+      letter-spacing: 0.02em
         }
   }
 
@@ -285,6 +286,7 @@
       font-size: 18px;
       line-height: 22px;
       color:$ActiveColor;
+      letter-spacing: 0.02em
     }
     &__separator {
       height: 22px;
